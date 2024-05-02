@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iv5-vY-Z8E">
+    <device id="retina6_0" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="RDc-jo-aoU">
+            <objects>
+                <tabBarController id="iv5-vY-Z8E" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aL2-bB-aGs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Dj8-cA-UgW" kind="relationship" relationship="viewControllers" id="hBO-Tn-365"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xFj-IB-bWd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-292" y="-745"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="ziM-wB-Q3H">
+            <objects>
+                <navigationController id="Dj8-cA-UgW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="USe-6s-Xia">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nGC-RI-GrX">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="AccentColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Dl8-a5-FMG" kind="relationship" relationship="rootViewController" id="fO2-y2-upp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K2A-9X-1f1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-292" y="99"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="ZEJ-Jy-uWK">
+            <objects>
+                <viewController id="Dl8-a5-FMG" userLabel="Home" customClass="ViewController" customModule="Foodify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Giv-M1-R1O">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Foodify" translatesAutoresizingMaskIntoConstraints="NO" id="AHJ-Jm-37f">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCn-vR-emJ">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="s3I-8i-ck1">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="systemUltraThinMaterialLight"/>
+                            </visualEffectView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1LR-WA-iPx">
+                                <rect key="frame" x="25" y="141" width="340" height="530"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kGm-Ma-aOu">
+                                        <rect key="frame" x="8" y="8" width="324" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="gk5-46-aOu"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ku6-we-6BP">
+                                        <rect key="frame" x="8" y="218" width="324" height="185.33333333333337"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSa-ni-Uly">
+                                        <rect key="frame" x="8" y="413.33333333333337" width="324" height="64.333333333333314"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64.333333333333314" id="tjq-Ub-VR3"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Close">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.32941176470588235" green="0.80392156862745101" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="cancelButtonPressed:" destination="Dl8-a5-FMG" eventType="touchUpInside" id="pex-2o-cPN"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="r8o-Av-TKU">
+                                        <rect key="frame" x="8" y="487.66666666666663" width="324" height="34.333333333333371"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="div-dg-4lA">
+                                                <rect key="frame" x="0.0" y="0.0" width="157" height="34.333333333333336"/>
+                                                <menu key="menu" id="F1a-Of-XVB">
+                                                    <children>
+                                                        <command title="-- Select --" id="w7Y-KU-SXu">
+                                                            <connections>
+                                                                <action selector="menuPressedSelect:" destination="uS4-ZT-3ai" id="MuY-gc-N4M"/>
+                                                            </connections>
+                                                        </command>
+                                                        <command title="Vegan" id="6O0-rV-76j">
+                                                            <connections>
+                                                                <action selector="menuPressedVegan:" destination="uS4-ZT-3ai" id="lFo-Uv-iVd"/>
+                                                            </connections>
+                                                        </command>
+                                                        <command title="Vegetarian" id="7Ok-Xd-RyC">
+                                                            <connections>
+                                                                <action selector="menuPressedVegetarian:" destination="uS4-ZT-3ai" id="wNf-6K-sLs"/>
+                                                            </connections>
+                                                        </command>
+                                                        <command title="Halal" id="nqB-ce-mh1">
+                                                            <connections>
+                                                                <action selector="menuPressedHalal:" destination="uS4-ZT-3ai" id="9DT-Yx-rav"/>
+                                                            </connections>
+                                                        </command>
+                                                        <command title="Kosher" id="bx0-Ad-7Ta">
+                                                            <connections>
+                                                                <action selector="menuPressedKosher:" destination="uS4-ZT-3ai" id="Kxc-0j-rn2"/>
+                                                            </connections>
+                                                        </command>
+                                                        <menu title="Diets" id="ZUc-fm-CTh">
+                                                            <children>
+                                                                <command title="Keto" id="SRK-vd-gFV">
+                                                                    <connections>
+                                                                        <action selector="menuPressedKeto:" destination="uS4-ZT-3ai" id="o09-Y6-Vrf"/>
+                                                                    </connections>
+                                                                </command>
+                                                                <command title="Paleo" id="FAI-rK-hBK">
+                                                                    <connections>
+                                                                        <action selector="menuPressedPaleo:" destination="uS4-ZT-3ai" id="rMr-Ko-0ew"/>
+                                                                    </connections>
+                                                                </command>
+                                                            </children>
+                                                        </menu>
+                                                    </children>
+                                                </menu>
+                                                <state key="normal" title="Select Preference">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <buttonConfiguration key="configuration" style="filled" title="Select Preference">
+                                                    <color key="baseForegroundColor" red="0.18823529410000001" green="0.67843137249999996" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="max-kV-WGU">
+                                                <rect key="frame" x="167" y="0.0" width="157" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Check">
+                                                    <backgroundConfiguration key="background" cornerRadius="5">
+                                                        <color key="backgroundColor" red="0.18823529410000001" green="0.67843137249999996" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </backgroundConfiguration>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tappedCheck:" destination="Dl8-a5-FMG" eventType="touchUpInside" id="rtf-9U-M21"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.79607843137254897" green="0.94117647058823528" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7dL-QI-ZgL"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7dL-QI-ZgL" firstAttribute="trailing" secondItem="1LR-WA-iPx" secondAttribute="trailing" constant="25" id="5bZ-8a-RlT"/>
+                            <constraint firstItem="AHJ-Jm-37f" firstAttribute="leading" secondItem="Giv-M1-R1O" secondAttribute="leading" id="6K0-Ik-8dH"/>
+                            <constraint firstItem="cCn-vR-emJ" firstAttribute="leading" secondItem="Giv-M1-R1O" secondAttribute="leading" id="Hg0-c5-9Jc"/>
+                            <constraint firstItem="AHJ-Jm-37f" firstAttribute="top" secondItem="Giv-M1-R1O" secondAttribute="top" id="J0G-IY-oZg"/>
+                            <constraint firstItem="1LR-WA-iPx" firstAttribute="leading" secondItem="7dL-QI-ZgL" secondAttribute="leading" constant="25" id="N5G-mS-RAY"/>
+                            <constraint firstAttribute="trailing" secondItem="cCn-vR-emJ" secondAttribute="trailing" id="Nbz-6N-j9F"/>
+                            <constraint firstItem="cCn-vR-emJ" firstAttribute="top" secondItem="Giv-M1-R1O" secondAttribute="top" id="OFv-RR-S7t"/>
+                            <constraint firstItem="7dL-QI-ZgL" firstAttribute="bottom" secondItem="1LR-WA-iPx" secondAttribute="bottom" constant="90" id="Vvf-py-6GA"/>
+                            <constraint firstAttribute="trailing" secondItem="AHJ-Jm-37f" secondAttribute="trailing" id="XkK-V6-z3V"/>
+                            <constraint firstItem="1LR-WA-iPx" firstAttribute="top" secondItem="7dL-QI-ZgL" secondAttribute="top" constant="50" id="d4r-0o-sQb"/>
+                            <constraint firstAttribute="bottom" secondItem="cCn-vR-emJ" secondAttribute="bottom" id="qTk-fX-1kY"/>
+                            <constraint firstAttribute="bottom" secondItem="AHJ-Jm-37f" secondAttribute="bottom" id="thM-hc-2L6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="lYD-O9-0CN" userLabel="Home">
+                        <barButtonItem key="rightBarButtonItem" id="LmJ-gv-dYg">
+                            <imageReference key="image" image="camera" catalog="system" renderingMode="hierarchical">
+                                <hierarchicalColors>
+                                    <color name="AccentColor"/>
+                                    <color red="0.18823529410000001" green="0.67843137249999996" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color red="0.18823529410000001" green="0.60392156860000001" blue="0.602715373" alpha="1" colorSpace="calibratedRGB"/>
+                                </hierarchicalColors>
+                            </imageReference>
+                            <connections>
+                                <action selector="scanButtonPressed:" destination="Dl8-a5-FMG" id="rxa-RW-dTS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="blurView" destination="cCn-vR-emJ" id="HNq-LH-9OY"/>
+                        <outlet property="imageView" destination="kGm-Ma-aOu" id="fGI-RE-uBY"/>
+                        <outlet property="ingredientField" destination="ku6-we-6BP" id="rM1-mu-fWy"/>
+                        <outlet property="mainStackView" destination="1LR-WA-iPx" id="KPI-ZE-JVT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uS4-ZT-3ai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-292.30769230769232" y="876.5402843601895"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Foodify" width="393" height="852"/>
+        <image name="camera" catalog="system" width="128" height="93"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <namedColor name="AccentColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
